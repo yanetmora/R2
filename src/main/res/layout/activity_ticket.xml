@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_ticket"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.orders.TicketActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_name_ticket"
+        android:inputType="text"
+        android:hint="@string/type_ticket_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/phone"
+        android:layout_below="@+id/et_name_ticket"
+        android:id="@+id/et_phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/folio"
+        android:id="@+id/et_folio"
+        android:layout_below="@+id/et_phone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_ticket"
+        android:layout_below="@+id/et_folio"
+        android:id="@+id/bt_save_ticket"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bt_save_ticket"
+        android:id="@+id/rv_ticket_list"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Recuperacion 2</string>
+    <string name="type_product_name">Type product name</string>
+    <string name="type_price_of_product">Type price of product</string>
+    <string name="add_product">Add product</string>
+    <string name="type_stock_product">Type stock product</string>
+    <string name="save_product">Save product</string>
+    <string name="type_ticket_name">Type ticket name</string>
+    <string name="phone">Phone</string>
+    <string name="folio">Folio</string>
+    <string name="save_ticket">Save ticket</string>
+    <string name="assertio">Assertio</string>
+    <string name="name">Name</string>
+    <string name="tree">Tree</string>
+    <string name="save_node">Save node</string>
+    <string name="product_name">Product name</string>
+    <string name="product_stock">Product stock</string>
+</resources>

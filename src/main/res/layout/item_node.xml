@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/cv_node">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_node"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_node_assertio"
+            android:layout_toRightOf="@id/iv_node"
+            android:textSize="15pt"
+            android:text="Assertio"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_edit_node"
+            android:layout_toRightOf="@+id/tv_node_assertio"
+            android:src="@android:drawable/ic_menu_edit"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_delet_node"
+            android:layout_toRightOf="@+id/tv_node_assertio"
+            android:layout_below="@+id/bt_edit_node"
+            android:src="@android:drawable/ic_menu_delete"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_node_name"
+            android:layout_toRightOf="@id/iv_node"
+            android:layout_below="@+id/tv_node_assertio"
+            android:text="Node name"
+            android:textSize="10pt"
+
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_node_tree"
+            android:layout_toRightOf="@id/tv_node_name"
+            android:layout_below="@+id/tv_node_assertio"
+            android:text="Node tree"
+            android:textSize="10pt"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/bt_edit_node"
+            android:layout_toStartOf="@+id/bt_edit_node"
+
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

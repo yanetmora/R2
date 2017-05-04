@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_film">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_film"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_film"
+            android:layout_toRightOf="@id/iv_film"
+            android:textSize="15pt"
+            android:text="FILM"
+            />
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_title"
+            android:layout_toRightOf="@id/iv_film"
+            android:layout_below="@+id/tv_film"
+            android:text="Title"
+            android:textSize="10pt"
+
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_description"
+            android:layout_below="@+id/tv_title"
+            android:text="Description"
+            android:textSize="10pt"
+            android:layout_toRightOf="@id/iv_film"/>
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_release_year"
+                    android:layout_below="@+id/tv_description"
+                    android:text="Release Year"
+                    android:textSize="10pt"
+                    android:layout_toRightOf="@id/iv_film"/>
+
+        <!--
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_languaje"
+                 android:layout_below="@+id/tv_release_year"
+                 android:text="Languaje"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_rental_duration"
+                 android:layout_below="@+id/tv_languaje"
+                 android:text="Rental Duration"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_rental_rate"
+                 android:layout_below="@+id/tv_rental_duration"
+                 android:text="Rental Rate"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_length"
+                 android:layout_below="@+id/tv_rental_rate"
+                 android:text="Length"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_replacement"
+                 android:layout_below="@+id/tv_length"
+                 android:text="Replacement Cost"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_rating"
+                 android:layout_below="@+id/tv_replacement"
+                 android:text="Rating"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_last_update"
+                 android:layout_below="@+id/tv_rating"
+                 android:text="Last Update"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/tv_special"
+                 android:layout_below="@+id/tv_last_update"
+                 android:text="Special"
+                 android:textSize="10pt"
+                 android:layout_toRightOf="@id/iv_film"/>
+       <TextView
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:id="@+id/tv_fulltext"
+           android:layout_below="@+id/tv_special"
+           android:text="Fultext"
+           android:textSize="10pt"
+           android:layout_toRightOf="@id/iv_film"/>
+-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_edit_film"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_film"
+            android:layout_toEndOf="@+id/tv_film" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_delete_film"
+            android:layout_below="@+id/bt_edit_film"
+            android:layout_toRightOf="@+id/tv_film"
+            android:src="@android:drawable/ic_menu_delete"
+            />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
